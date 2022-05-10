@@ -1,8 +1,8 @@
 # This is a header for the application
 # You should read this header and insert your name and your date below as part of the peer review
 # This is a typical part of any program
-# Author: <author>
-# Creation Date: <date>
+# Author: <Kevin Monell>
+# Creation Date: <5/10/22>
 # Below is a simple program with 10 issues (some are syntax errors and some are logic errors.  You need to identify the issues and correct them.
 
 import random
@@ -16,14 +16,14 @@ def displayIntro():
 	print()
 
 def chooseCave():
-    cave = ''
-	while cave != '1' and cave != '2':
+    cave = '' #variable better suited before defining function
+	while cave != '1' and cave != '2': #indentation incosistent
 		print('Which cave will you go into? (1 or 2)')
 		cave = input()
 
-	return caves
+	return caves #caves not a defined variable
 
-def checkCave(chosenCave):
+def checkCave(chosenCave): #unindent not expected
 	print('You approach the cave...')
 	#sleep for 2 seconds
 	time.sleep(2)
@@ -39,16 +39,16 @@ def checkCave(chosenCave):
 	if chosenCave == str(friendlyCave):
 		print('Gives you his treasure!')
 	else:
-		print 'Gobbles you down in one bite!'
+		print 'Gobbles you down in one bite!' #missing paranthesis for print command
 
 playAgain = 'yes'
-while playAgain = 'yes' or playAgain = 'y':
+while playAgain = 'yes' or playAgain = 'y': #syntax should be ==
 	displayIntro()
-	caveNumber = choosecave()
+	caveNumber = choosecave() #wrong variable name
 	checkCave(caveNumber)
     
-	print('Do you want to play again? (yes or no)')
+	print('Do you want to play again? (yes or no)') 
 	playAgain = input()
 	if playAgain == "no":
-		print("Thanks for planing")
+		print("Thanks for planing") #typo
 
